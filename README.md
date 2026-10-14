@@ -10,12 +10,18 @@ The goal of this lab is to develop a deeper understanding of the fundamental arc
 
 ## Tasks (performance)
 1. Compile and run addition
-  team2@hclab02:~/Desktop/new/gpu-programming$ nvcc addition.cu -o addition
-  team2@hclab02:~/Desktop/new/gpu-programming$ ./addition
-  Vector addition of 50000 elements
-  CUDA kernel launch with 196 blocks of 256 threads
-  Test PASSED
-  Done
+
+      team2@hclab02:\~/Desktop/new/gpu-programming\$ nvcc addition.cu -o addition
+      
+      team2@hclab02:\~/Desktop/new/gpu-programming\$ ./addition
+    
+      Vector addition of 50000 elements
+      
+      CUDA kernel launch with 196 blocks of 256 threads
+      
+      Test PASSED
+      
+      Done
 
 3. Measure execution time GPU (hint: `cudaEvent_t start, stop;` \n `cudaEventCreate(&start);`)
 4. Implement CPU version
