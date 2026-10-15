@@ -13,9 +13,9 @@ __global__ void countAboveThreshold(const float *A, int *count, float threshold,
 
     // Make sure we don't go out of bounds & count elements greater than threshold
     if (i < numElements && A[i] > threshold) {
-        (*count)++;
-
+        atomicAdd(count, 1);  
     }
+
 }
 
 int main() {
